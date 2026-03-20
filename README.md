@@ -1,7 +1,11 @@
 # 🧠 Manual-CNN: Convolutional Neural Network from Scratch
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![NumPy](https://img.shields.io/badge/library-NumPy-orange.svg)](https://numpy.org/)
-
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
+![Deep Learning](https://img.shields.io/badge/Deep%20Learning-CNN-blueviolet?style=for-the-badge)
+![Computer Vision](https://img.shields.io/badge/Computer%20Vision-Vision-green?style=for-the-badge)
+![Neural Network](https://img.shields.io/badge/Neural%20Network-ANN-red?style=for-the-badge)
 
 A lightweight, modular, and mathematically grounded implementation of **Convolutional Neural Networks (CNN)** built entirely from scratch using **NumPy**. This project demonstrates the core mechanics of computer vision—from sliding window convolutions to feature map flattening—without relying on high-level frameworks like TensorFlow or PyTorch.
 
