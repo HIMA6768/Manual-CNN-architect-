@@ -18,27 +18,49 @@ A lightweight, modular, and mathematically grounded implementation of **Convolut
 
 ---
 
-## 🛠️ Mathematical Foundation
+# 🧠 PureConv-Engine: Manual CNN from Scratch
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![NumPy](https://img.shields.io/badge/library-NumPy-orange.svg)](https://numpy.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-The core of this implementation follows the standard CNN spatial dimension formula:
+A modular and mathematically grounded implementation of **Convolutional Neural Networks (CNN)** built entirely from scratch using **NumPy**. This project strips away high-level frameworks like TensorFlow or PyTorch to reveal the raw linear algebra and sliding-window logic that powers Computer Vision.
 
-$$O = \frac{I - K + 2P}{S} + 1$$
+---
 
-Where:
-- $I$: Input size
-- $K$: Kernel/Filter size
-- $P$: Padding
-- $S$: Stride
+## 🚀 Features
+
+- **Multi-Channel RGB Convolution:** Processes 3-channel image data with manual kernel integration.
+- **Dynamic Auto-Padding:** Automatically calculates and applies padding based on kernel size.
+- **Non-Linear Activation:** Integrated **ReLU** (Rectified Linear Unit) to filter feature maps.
+- **Flexible Pooling:** Support for **Max**, **Average**, and **Min Pooling** layers.
+- **Feature Flattening:** Seamlessly converts 2D feature maps into 1D vectors for Neural Network compatibility.
+- **Custom Kernel Library:** Includes `Emboss`, `Sobel (Edges)`, `Sharpen`, and `Blur` filters.
+
+---
+
+## 🛠️ Mathematical Foundations
+
+The engine calculates required padding and output dimensions using these standard CNN formulas:
+
+### 1. Required Padding ($P$)
+To ensure the output size remains consistent with the input (Same Padding), the required padding is calculated as:
+$$P = \frac{F - 1}{2}$$
+*(Where $F$ is the Filter/Kernel size)*
+
+### 2. Output Dimension ($O$)
+The spatial dimension of the output map is determined by:
+$$O = \frac{I - F + 2P}{S} + 1$$
+*(Where $I$: Input size, $S$: Stride)*
 
 ---
 
 ## 📂 Project Structure
 
 ```text
-├── cnn.py            # Core logic: Convolution, Pooling, ReLU, Flatten
-├── kernels.py        # Library of image processing filters (Emboss, Sobel, etc.)
-├── sampleinput.py    # Sample image matrices for testing
-└── testcode.py           # Pipeline execution and orchestration
+├── cnn.py            # Core Logic: Convolution, Pooling, ReLU, Flatten
+├── kernels.py        # Library of Filters (Emboss, Sobel, Sharpen, etc.)
+├── sampleinput.py    # Sample 3D Image Matrices
+└── testcode.py       # Pipeline Execution & Orchestration
 ```
 ## 🧪 Installation & Usage
 Copy and paste the following command into your terminal to clone, install, and run the project:
