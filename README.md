@@ -1,6 +1,4 @@
 # 🧠 Manual-CNN: Convolutional Neural Network from Scratch
-[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![NumPy](https://img.shields.io/badge/library-NumPy-orange.svg)](https://numpy.org/)
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
 ![Deep Learning](https://img.shields.io/badge/Deep%20Learning-CNN-blueviolet?style=for-the-badge)
