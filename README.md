@@ -45,12 +45,12 @@ The engine calculates required padding and output dimensions using these standar
 ### 1. Required Padding ($P$)
 To ensure the output size remains consistent with the input (Same Padding), the required padding is calculated as:
 $$P = \frac{F - 1}{2}$$
-*(Where $F$ is the Filter/Kernel size)*
+**(Where $F$ is the Filter/Kernel size)**
 
 ### 2. Output Dimension ($O$)
 The spatial dimension of the output map is determined by:
 $$O = \frac{I - F + 2P}{S} + 1$$
-*(Where $I$: Input size, $S$: Stride)*
+**(Where $I$: Input size, $S$: Stride)**
 
 ---
 
